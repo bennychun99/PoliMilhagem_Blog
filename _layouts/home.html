@@ -2,7 +2,7 @@
 layout: default
 ---
 <ul>
-<header><img src="/assets/images/sample-logo.jpg"></header>
+<header><img src="{{'/assets/images/sample-logo.jpg' | relative_url}}"></header>
 {% for post in site.posts %}
     <li><a href="{{post.url | relative_url}}">{{post.title}}</a></li>
 {% endfor %}
